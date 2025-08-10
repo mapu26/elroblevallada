@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Comparsa El Roble</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Marcellus&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/logo-2.jpg" type="image/jpg" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <div class="logo-left">
+        <img src="img/logo-1.png" alt="Años históricos" loading="lazy" />
+      </div>
+
+      <div class="logo-center">
+        <h1>el Roble</h1>
+        <p>Capitania 2025</p>
+      </div>
+
+      <div class="logo-right">
+        <img src="img/logo-2.jpg" alt="Emblema" loading="lazy" />
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contacto">
+      <h2>¡Contáctanos!</h2>
+
+      <form class="form-contacto" action="https://formspree.io/f/tu-email@ejemplo.com" method="POST">
+        <div class="input-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="input-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+
+      <div class="info-adicional">
+        <h3>Tambien nos encuentras en:</h3>
+         <div class="contacto-item">
+                <i class="fas fa-phone-alt icono-contacto"></i>
+                <div>
+                    <h4>Teléfono</h4>
+                    <a href="tel:+34123456789">+34 626 537 864</a>
+                </div>
+            </div>
+            
+            <div class="contacto-item">
+                <i class="fas fa-envelope icono-contacto"></i>
+                <div>
+                    <h4>Email</h4>
+                    <a href="mailto:elroblevallada4@gmail.com">elroblevallada4@gmail.com</a>
+                </div>
+            </div>
+            <div class="contacto-item">
+                <i class="fas fa-map-marker-alt icono-contacto"></i>
+                <div>
+                    <h4>Dirección</h4>
+                    <p>Calle Comandante Cirujeda, 2 - Vallada (Valencia)</p>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer (siempre abajo) -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Comparsa El Roble. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="mailto:contacto@elroble.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
