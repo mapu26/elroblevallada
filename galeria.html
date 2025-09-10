@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/galeria.css" />
     <link rel="icon" href="img/logo-2.jpg" type="image/jpg" />
   </head>
   <body>
@@ -21,7 +22,7 @@
       </div>
 
       <div class="logo-center">
-        <h1>el Roble</h1>
+        <h1>El Roble</h1>
         <p>Capitania 2025</p>
       </div>
 
@@ -42,84 +43,264 @@
 
     <!-- Contenido principal -->
     <main class="galeria-container">
-      <h2>Galería Histórica</h2>
+      <h1 class="titulo-galeria">Galería Histórica</h1>
 
-      <!-- Año 2023 -->
-      <div class="anio-galeria">
-        <h2 class="anio-titulo">2023</h2>
-
-        <div class="evento">
-          <h3>Medio Año de Moros</h3>
-          <div class="grid-galeria">
-            <div class="item-galeria">
-              <img src="./img/galeria/3.jpeg" alt="Medio Año 2023 - Foto 1" />
-              <div class="leyenda">Presentación de trajes</div>
-            </div>
-            <div class="item-galeria">
-              <img src="./img/galeria/4.jpeg" alt="Medio Año 2023 - Foto 2" />
-              <div class="leyenda">Desfile nocturno</div>
-            </div>
-            <div class="item-galeria">
-              <img src="./img/galeria/5.jpeg" alt="Medio Año 2023 - Foto 2" />
-              <div class="leyenda">Desfile nocturno</div>
-            </div>
-            <!-- Añadir más imágenes -->
-          </div>
-        </div>
-
-        <div class="evento">
-          <h3>Moros y Cristianos</h3>
-          <div class="grid-galeria">
-            <div class="item-galeria">
-              <img src="./img/galeria/1.jpeg" alt="Fiestas 2023 - Foto 1" />
-              <div class="leyenda">Alardos</div>
-            </div>
-            <div class="item-galeria">
-              <img src="./img/galeria/2.jpeg" alt="Fiestas 2023 - Foto 2" />
-              <div class="leyenda">Muestra Comparsa</div>
-            </div>
-            <div class="item-galeria">
-              <img src="./img/galeria/6.jpeg" alt="Fiestas 2023 - Foto 2" />
-              <div class="leyenda">Muestra Comparsa</div>
-            </div>
-            <!-- Añadir más imágenes -->
-          </div>
-        </div>
+      <!-- Filtro por Años -->
+      <div class="filtro-anos">
+        <button class="btn-filtro active" data-ano="todos">Todos</button>
+        <button class="btn-filtro" data-ano="2025">2025</button>
+        <button class="btn-filtro" data-ano="2024">2024</button>
+        <button class="btn-filtro" data-ano="2023">2023</button>
       </div>
 
-      <!-- Año 2022 -->
-      <div class="anio-galeria">
-        <h2 class="anio-titulo">2022</h2>
-
-        <div class="evento">
-          <h3>Medio Año de Moros</h3>
-          <div class="grid-galeria">
-            <!-- Misma estructura que 2023 -->
-          </div>
-        </div>
-
-        <div class="evento">
-          <h3>Moros y Cristianos</h3>
-          <div class="grid-galeria">
-            <!-- Misma estructura que 2023 -->
-          </div>
-        </div>
+      <!-- Filtro por Tipo de Evento (oculto inicialmente) -->
+      <div class="filtro-eventos" style="display: none">
+        <button class="btn-evento active" data-evento="todos">Todos</button>
+        <button class="btn-evento" data-evento="mig">Mig Any de Moros</button>
+        <button class="btn-evento" data-evento="moros">Moros i Cristians</button>
       </div>
 
-      <!-- Puedes añadir más años aquí -->
+      <!-- Contenedor de Fotos -->
+      <div class="grid-galeria">
+        <!-- Año 2025 - Mig Any -->
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/1.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/2.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/3.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/4.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/5.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/6.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/7.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/8.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2025" data-evento="mig">
+          <img src="./img/galeria/2025/mig/9.jpeg" alt="Mig Any 2025" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Abril 2025</p>
+          </div>
+        </div>
+
+        <!-- Año 2025 - Moros i Cristians -->
+        <div class="item-galeria" data-ano="2025" data-evento="moros">
+          <img src="./img/galeria/2025/mig/5.jpeg" alt="Moros i Cristians 2025" />
+          <div class="leyenda">
+            <h3>Moros i Cristians</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <!-- Año 2024 - Mig Any -->
+        <div class="item-galeria" data-ano="2024" data-evento="mig">
+          <img src="./img/galeria/2024/mig/1.jpeg" alt="Mig Any 2024" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Març 2024</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="mig">
+          <img src="./img/galeria/2024/mig/2.jpeg" alt="Mig Any 2024" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Març 2024</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="mig">
+          <img src="./img/galeria/2024/mig/3.jpeg" alt="Mig Any 2024" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Març 2024</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="mig">
+          <img src="./img/galeria/2024/mig/4.jpeg" alt="Mig Any 2024" />
+          <div class="leyenda">
+            <h3>Mig Any de Moros</h3>
+            <p>Març 2024</p>
+          </div>
+        </div>
+
+        <!-- Año 2024 - Moros i Cristians -->
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/1a.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians_Alardos</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/1m.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/2a.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians_Alardos</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/2m.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/3a.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians_Alardos</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/3m.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/4a.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians_Alardos</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/4m.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/5a.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians_Alardos</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/5m.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/6a.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians_Alardos</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/7a.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians_Alardos</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-ano="2024" data-evento="moros">
+          <img src="./img/galeria/2024/moros/8a.jpeg" alt="Moros i Cristians 2024" />
+          <div class="leyenda">
+            <h3>Moros i Cristians_Alardos</h3>
+            <p>Setembre 2025</p>
+          </div>
+        </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox">
+        <span class="cerrar-lightbox">&times;</span>
+        <img class="imagen-lightbox" src="" alt="" />
+        <div class="texto-lightbox"></div>
+      </div>
     </main>
-
     <!-- Footer (siempre abajo) -->
     <footer>
       <div class="footer-content">
         <p>&copy; 2025 Comparsa El Roble. Todos los derechos reservados.</p>
         <div class="redes-sociales">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/comparsa_elroble" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           <a href="mailto:contacto@elroble.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
     </footer>
+    <script src="js/galeria.js"></script>
   </body>
 </html>
