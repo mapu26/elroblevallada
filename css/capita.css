@@ -1,0 +1,48 @@
+.capita-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.capita-imagen {
+  width: 100%;
+  max-width: 400px;
+  border: 5px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin: 2rem auto;
+}
+
+.capita-texto {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f0f0f0;
+  text-align: justify;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #d4af37;
+  margin-top: 2rem;
+}
+
+.capita-firma {
+  font-family: 'Amiri', serif;
+  color: #d4af37;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-align: right;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .capita-imagen {
+    max-width: 300px;
+  }
+
+  .capita-texto {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+}

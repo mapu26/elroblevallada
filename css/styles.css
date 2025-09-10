@@ -156,6 +156,41 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Contenedor de botones en intro */
+.intro-buttons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Botón El Nostre Capitá */
+.btn-capita {
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+  color: #000 !important;
+  border: 2px solid #8b0000;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-capita:hover {
+  background: linear-gradient(135deg, #b8860b 0%, #996515 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+  color: #000 !important;
+}
+
+/* Efecto de corona dorada */
+.btn-capita i {
+  color: #8b0000;
+  transition: transform 0.3s ease;
+}
+
+.btn-capita:hover i {
+  transform: scale(1.2);
+}
+
 /* CONTACTO */
 .contacto {
   max-width: 800px;
